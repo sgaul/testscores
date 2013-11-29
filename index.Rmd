@@ -1,0 +1,293 @@
+---
+title       : Test scores
+subtitle    : Hartford regional data and indicators
+author      : Scott Gaul
+job         : Community Indicators Project
+framework   : minimal        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+ext_widgets : {rCharts: ["libraries/nvd3"]} 
+mode        : selfcontained # {standalone, draft}
+---
+
+## Test scores
+
+This page covers indicators related to test scores of students attending Hartford area districts. 
+
+Enrollment patterns for the region mean that students in school districts for the 30 towns in the CRCOG region are not the same as the school-age population living in the region. For instance, students from towns outside the region may attend schools located within the 30-town CRCOG region. In addition, students living in the region that attend private schools, are home-schooled or pursue other alternatives are not captured.
+
+## Data and limitations
+
+Data on test scores for Connecticut are available from the [State Department of Education](http://sdeportal.ct.gov/Cedar/). 
+
+## What do we already know?
+
+Indicators for test scores ranked highly in the survey and are used in several reports. 
+
+### Local
+
+* [CT Fair Housing Center Opportunity Mapping](http://www.ctfairhousing.org/people-place-and-opportunity-report/) (developed with the Kirwan Institute at Ohio State) includes students with passing math and reading test scores from SDE. 
+* [CT Kids Report Card](http://www.cga.ct.gov/kid/rba/results.asp) includes third grade reading level as part of 'Future Success.'
+* [CWP Community Workforce Development Report Card](http://www.capitalworkforce.org/ctworks/documents/Community_Workforce_Development_Report_Card_2011ff.pdf) included students achieving goal in math and reading on the 8th grade CMT and the 10th grade CAPT.  
+Hartford Neighborhood Assessments  included the percent of students not proficient in overall CMT scores. 
+* [Health Equity Index](http://www.cadh.org/health-equity/health-equity-index.html) comprehensive test scores for grades 3, 4, 6, 8 and 10. 
+* [KidsCount](http://www.cahs.org/kidscount.asp) includes comprehensive 4th grade CMT scores and 10th grade CAPT scores. 
+* [Pioneer Valley State of the People](http://pvpc.org/resources/datastats/state-of-people/stateofthepeople2013.pdf) includes scores on math, reading and English proficiency from Grades 3, 8 and 10. 
+Sustainable Knowledge Corridor	includes 3rd grade reading test scores. 
+* [Population Results Working Group](http://www.ct.gov/opm/cwp/view.asp?a=2998&Q=490946) includes the Pprcent of 3rd graders at or above Goal on CMT Reading and Math. 
+
+### Other
+
+* [Boston Indicators Project](http://www.bostonindicators.org/) includes NAEP scores for reading and math for Grades 3, 4 and 8, Massachusetts state assessment scores for 10th grade and First Grade DIEBLS Reading	scores
+* [The Child Well-Being Index](http://fcd-us.org/our-work/child-well-being-index-cwi) includes national math and reading test scores. 
+* [The Rhode Island Community Foundation](http://www.rifoundation.org/CommunityLeadership/CommunityDashboard/tabid/1157/Default.aspx) includes NECAP Assessment scores for Math and Reading for Grades 4, 8 and 11. 
+
+## Sample results
+
+The community indicator efforts listed above generally focus on test scores from 3rd to 10th grade, for math, reading and English language skills. In Connectict, these are covered by two main tests: the Connecticut Mastery Test (CMT) and the Connecticut Academic Performance Test (CAPT).  
+
+### CMT scores
+
+For the CMT test, the results reflect test scores for 3rd grade and 8th grade for math, reading and writing, and 5th and 8th grade for science. 
+
+The percent of students scoring above goal has steadily increased for the region over the past five years. 
+
+```{r echo = FALSE, warning = FALSE, message = FALSE, fig.height = 3}
+library(ggplot2)
+cmt <- read.csv('cmt.csv', na.strings = c("**","-"))
+cmt <- subset(cmt, cmt$District.ID %in% 
+                     levels(as.factor(districts$districtid)))
+cmt_region <- ddply(cmt,.(School.Year), summarise,
+                     Standard.CMT.Score.Summary.Percent.at.above.Goal.level = weighted.mean(Standard.CMT.Score.Summary.Percent.at.above.Goal.level, Number.of.Students.Tested, na.rm = TRUE),
+                    Standard.CMT.Score.Summary.Average.Scale.Score = weighted.mean(Standard.CMT.Score.Summary.Average.Scale.Score, Number.of.Students.Tested, na.rm = TRUE))
+
+ggplot(data = cmt_region, aes(x = School.Year, y = Standard.CMT.Score.Summary.Percent.at.above.Goal.level)) + 
+  geom_line(aes(group = "")) + 
+  geom_point() + 
+  ylim(0,100) + 
+  theme_minimal() + 
+  labs(x = "School Year", y = "% above goal, all CMT tests")
+```
+
+All subsequent results are for the same period for which test scores are currently available from SDE.
+
+By district, results can vary substantially year-on-year and by test and by school. Districts like Avon and Granby have had the highest performance over time, with Hartford and East Hartford faring the worst. 
+
+```{r echo = FALSE, warning = FALSE, message = FALSE}
+ggplot(data = cmt, aes(x = District.Name, y = Standard.CMT.Score.Summary.Percent.at.above.Goal.level)) + 
+  geom_boxplot() + 
+  coord_flip() + 
+  theme_minimal() + 
+  labs(x = NULL, y = "Percent above goal, all CMT tests")
+```
+
+The results by test show the same patterns. 
+
+### CMT subgroup results
+
+SDE discloses test scores also for the following subgroups: 
+* English language learners
+* Free / Reduced-price lunch eligibility (as a proxy for household income)
+* Gender
+* Race / ethnicity
+* Special education
+
+Are there differences in test scores for these subgroups? (And are these differences significant?) Results are again for 3rd grade and 8th grade test scores, on math, reading and writing tests, for the past 6 years. 
+
+This view of the achievement gap again shows ELL students performing significantly worse than any other subgroup, followed by Special Education, Hispanic / Latino, Free-lunch eligible and Black students. White, Asian and higher-income (not Free / Reduced Price Lunch Eligible) students perform the best. 
+
+```{r echo = FALSE, warning = FALSE, message = FALSE, fig.height = 6}
+cmt_subgroups <- read.csv('cmt-subgroups.csv', na.strings = c("**","-"))
+cmt_subgroups <- subset(cmt_subgroups, cmt_subgroups$District.ID %in% 
+                     levels(as.factor(districts$districtid)))
+
+#Clean up race categories - make compatible with old categories
+cmt_subgroups$Status = gsub(x = cmt_subgroups$Status, 
+                                pattern = "American Indian/Alaska Native",
+                                replacement = "American Indian")
+
+cmt_subgroups$Status = gsub(x = cmt_subgroups$Status, 
+                                pattern = "Black/African American",
+                                replacement = "Black, not of Hispanic Origin")
+
+cmt_subgroups$Status = gsub(x = cmt_subgroups$Status, 
+                                pattern = "(White$)",
+                                replacement = "White, not of Hispanic Origin")
+
+cmt_subgroups <- subset(cmt_subgroups, Students.Tested > 0)
+
+ggplot(data = cmt_subgroups, aes(x = Status, y = Percent.at.or.Above.Goal)) + 
+  geom_boxplot() + 
+  coord_flip() + 
+  theme_minimal() + 
+  labs(x = NULL, y = "Percent at or above goal, all CMT tests")
+```
+
+The gaps between these subgroups have also changed little in the past six years.
+
+```{r echo = FALSE, warning = FALSE, message = FALSE}
+cmt_subgroups_region <- ddply(cmt_subgroups,.(School.Year, Subgroup, Status), summarise,
+                             Percent.at.or.Above.Goal = weighted.mean(Percent.at.or.Above.Goal, Students.Tested, na.rm = TRUE),
+                              Average.Scale.Score = weighted.mean(Average.Scale.Score, Students.Tested, na.rm = TRUE))
+#Show trends for the region
+ggplot(data = cmt_subgroups_region, aes(x = School.Year, y = Percent.at.or.Above.Goal)) + 
+  geom_line(aes(group = Status)) + 
+  geom_point(aes(group = Status)) + 
+  ylim(0,100) + 
+  facet_wrap(~ Subgroup, ncol = 2) + 
+  theme_minimal() + 
+  labs(x = "School Year", y = "Percent At or Above Goal, all CMT tests")
+```
+
+### CAPT scores
+
+For the CAPT test, there has been a similar slow steady improvement in scores for the region for the past five years. A majority of students are at or above goal, across all tests.
+
+```{r echo = FALSE, warning = FALSE, message = FALSE, fig.height = 3}
+capt <- read.csv('capt.csv', na.strings = c("**","-"))
+capt <- subset(capt, capt$District.ID %in% 
+                     levels(as.factor(districts$districtid)))
+capt_region <- ddply(capt,.(School.Year), summarise,
+                     Standard.CAPT.Score.Summary.Percent.at.above.goal.level = weighted.mean(Standard.CAPT.Score.Summary.Percent.at.above.goal.level, Number.of.Students.Tested, na.rm = TRUE),
+                     Percent.By.Level.Below.Basic = weighted.mean(Standard.CAPT.Results.by.Below.Basic, Number.of.Students.Tested, na.rm = TRUE),
+                     Average.Scale.Score = weighted.mean(Standard.CAPT.Score.Summary.Average.Scale.Score, Number.of.Students.Tested, na.rm = TRUE))
+ggplot(data = capt_region, aes(x = School.Year, y = Standard.CAPT.Score.Summary.Percent.at.above.goal.level)) + 
+  geom_line(aes(group = "")) + 
+  geom_point() + 
+  ylim(0,100) + 
+  theme_minimal() + 
+  labs(x = "School Year", y = "% above goal, all tests")
+```
+
+The percent scoring below basic level has been between 5 - 10 percent of students, generally declining over time. 
+
+All subsequent results are for the same five-year period for which test scores are currently available from SDE.
+
+```{r echo = FALSE, warning = FALSE, message = FALSE, fig.height = 3}
+ggplot(data = capt_region, aes(x=School.Year, y=Percent.By.Level.Below.Basic)) + 
+  geom_line(aes(group = "")) + 
+  geom_point() + 
+  ylim(0,25) + 
+  theme_minimal() + 
+  labs(x = "School Year", y = "Percent below basic, all CAPT tests")
+```
+
+If we look at school-level results by district, there is more variation within the region. Hartford, Bloomfield and East Hartford have the lowest scores overall, although there are low-scoring schools in other districts, including Enfield and CREC schools. 
+
+```{r echo = FALSE, warning = FALSE, message = FALSE}
+ggplot(data = capt, aes(x = District.Name, y = Standard.CAPT.Score.Summary.Percent.at.above.goal.level)) + 
+  geom_boxplot() + 
+  coord_flip() + 
+  theme_minimal() + 
+  labs(x = NULL, y = "Percent above goal, all CAPT tests")
+```
+
+Looking at the percent scoring below basic level allows for identification of outliers - pockets where individual schools have high percentages of underperforming students. Hartford, East Hartford, Bloomfield, Manchester and the CREC schools jump out. 
+
+```{r echo = FALSE, warning = FALSE, message = FALSE}
+capt$District.Name <- reorder(capt$District.Name, -capt$Standard.CAPT.Results.by.Below.Basic, na.rm = TRUE)
+
+ggplot(data = subset(capt, Standard.CAPT.Results.by.Below.Basic > 0), 
+                     aes(x = District.Name, y = Standard.CAPT.Results.by.Below.Basic)) + 
+  geom_boxplot() + 
+#  geom_violin(scale = 'count') + 
+  coord_flip() + 
+  theme_minimal() + 
+  labs(x = NULL, y = "Percent below basic, all CAPT tests")
+```
+
+### CAPT subgroup results
+
+SDE discloses test scores also for the following subgroups: 
+* English language learners
+* Free / Reduced-price lunch eligibility (as a proxy for household income)
+* Gender
+* Race / ethnicity
+* Special education
+
+English language-learners (ELL) again have the lowest CAPT scores overall, significantly lower than any other subgroup. Those are followed by special education students, Hispanic / Latino and Black students and students eligible for free / reduced-price lunches. Whites and Asians had the highest scores, among these subgroups. 
+
+```{r echo = FALSE, warning = FALSE, message = FALSE, fig.height = 6}
+capt_subgroups <- read.csv('capt-subgroups.csv', na.strings = c("**","-"))
+capt_subgroups <- subset(capt_subgroups, capt_subgroups$District.ID %in% 
+                     levels(as.factor(districts$districtid)))
+
+#Clean up race categories - make compatible with old categories
+capt_subgroups$Status = gsub(x = capt_subgroups$Status, 
+                                pattern = "American Indian/Alaska Native",
+                                replacement = "American Indian")
+
+capt_subgroups$Status = gsub(x = capt_subgroups$Status, 
+                                pattern = "Black/African American",
+                                replacement = "Black, not of Hispanic Origin")
+
+capt_subgroups$Status = gsub(x = capt_subgroups$Status, 
+                                pattern = "(White$)",
+                                replacement = "White, not of Hispanic Origin")
+
+capt_subgroups <- subset(capt_subgroups, Students.Tested > 0)
+
+ggplot(data = capt_subgroups, aes(x = Status, y = Percent.At.or.Above.Goal)) + 
+  geom_boxplot() + 
+  coord_flip() + 
+  theme_minimal() + 
+  labs(x = NULL, y = "Percent at or above goal, all CAPT tests")
+```
+
+Trends for the region by subgroup show the same gradual improvements with the gap between subgroups remaining roughly constant for each group. 
+
+```{r echo = FALSE, warning = FALSE, message = FALSE}
+capt_subgroups_region <- ddply(capt_subgroups,.(School.Year, Subgroup, Status), summarise,
+                             Percent.At.or.Above.Goal = weighted.mean(Percent.At.or.Above.Goal, Students.Tested, na.rm = TRUE),  
+                         Percent.By.Level.Below.Basic = weighted.mean(Percent.By.Level.Below.Basic, Students.Tested, na.rm = TRUE),
+                         Average.Scale.Score = weighted.mean(Average.Scale.Score, Students.Tested, na.rm = TRUE))
+ggplot(data = capt_subgroups_region, aes(x = School.Year, y = Percent.At.or.Above.Goal)) + 
+  geom_line(aes(group = Status)) + 
+  geom_point(aes(group = Status)) + 
+  ylim(0,100) + 
+  facet_wrap(~ Subgroup, ncol = 2) + 
+  theme_minimal() + 
+  labs(x = "School Year", y = "Percent At or Above Goal, all tests")
+```
+
+Similarly, the percent scoring below basic has been gradually declining, with the highest levels for ELL students. 
+
+```{r echo = FALSE, warning = FALSE, message = FALSE}
+ggplot(data = capt_subgroups_region, aes(x=School.Year, y=Percent.By.Level.Below.Basic)) + 
+  geom_line(aes(group = Status)) + 
+  geom_point(aes(group = Status)) + 
+  ylim(0,100) + 
+  facet_wrap(~ Subgroup, ncol = 2) + 
+  theme_minimal() + 
+  labs(x = "School Year", y = "Average CAPT scale score, all tests")
+```
+
+### Sheff performance scores
+
+[Results for the Sheff case](http://www.ctmirror.org/node/143623) were released in late 2013 by SDE. The test score results show increases of 20 - 40 percent for performance at goal or proficiency for students participating in choice or magnet school programs. 
+
+```{r echo = FALSE, warning = FALSE, message = FALSE}
+grade <- read.csv("sheff-grade.csv")
+race <- read.csv("sheff-race.csv")
+
+#Facet plot of scores by grade for each school
+ggplot(data = grade) + 
+  geom_line(aes(x = Grade, y = Value, group = School)) +
+  geom_point(aes(x = Grade, y = Value, group = School, shape = School)) +
+  labs(y = "Percent at goal / proficiency") +
+  ylim(0,100) + 
+  theme_minimal() +
+  facet_wrap( ~ Level + Test, ncol = 2)
+
+#By race
+ggplot(data = subset(race, 
+                     School %in% c("CREC Magnet ","Hartford Magnet","HPS Regular","Open Choice") & 
+                       Race %in% c("African Amer.", "Latino/Hisp ","Two + races","White"))) + 
+  geom_line(aes(x = Test, y = Value, group = School)) +
+  geom_point(aes(x = Test, y = Value, group = School, shape = School)) +
+  labs(y = "Percent at goal / proficiency") +
+  theme_minimal() +
+    ylim(0,100) + 
+  facet_wrap( ~ Level + Race, ncol = 2)
+```
+

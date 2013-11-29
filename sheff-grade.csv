@@ -1,0 +1,193 @@
+Level,Test,Grade,School,Value
+Goal,Reading,3,HPS Regular,25.5
+Goal,Reading,3,Hartford Magnet,36.4
+Goal,Reading,3,CREC Magnet ,53.7
+Goal,Reading,3,Open Choice,31.7
+Goal,Writing,3,HPS Regular,37.2
+Goal,Writing,3,Hartford Magnet,47.7
+Goal,Writing,3,CREC Magnet ,59
+Goal,Writing,3,Open Choice,37
+Goal,Reading,4,HPS Regular,27.1
+Goal,Reading,4,Hartford Magnet,39.5
+Goal,Reading,4,CREC Magnet ,51
+Goal,Reading,4,Open Choice,39.2
+Goal,Writing,4,HPS Regular,31.3
+Goal,Writing,4,Hartford Magnet,37.5
+Goal,Writing,4,CREC Magnet ,46
+Goal,Writing,4,Open Choice,42.8
+Goal,Reading,5,HPS Regular,29.6
+Goal,Reading,5,Hartford Magnet,46.9
+Goal,Reading,5,CREC Magnet ,75
+Goal,Reading,5,Open Choice,52.3
+Goal,Writing,5,HPS Regular,34.6
+Goal,Writing,5,Hartford Magnet,49.4
+Goal,Writing,5,CREC Magnet ,60
+Goal,Writing,5,Open Choice,43.1
+Goal,Reading,6,HPS Regular,34.6
+Goal,Reading,6,Hartford Magnet,60.6
+Goal,Reading,6,CREC Magnet ,43
+Goal,Reading,6,Open Choice,54.5
+Goal,Writing,6,HPS Regular,30
+Goal,Writing,6,Hartford Magnet,49
+Goal,Writing,6,CREC Magnet ,41.7
+Goal,Writing,6,Open Choice,52.1
+Goal,Reading,7,HPS Regular,41.2
+Goal,Reading,7,Hartford Magnet,62
+Goal,Reading,7,CREC Magnet ,66.3
+Goal,Reading,7,Open Choice,66.4
+Goal,Writing,7,HPS Regular,23.1
+Goal,Writing,7,Hartford Magnet,45
+Goal,Writing,7,CREC Magnet ,45.6
+Goal,Writing,7,Open Choice,46.5
+Goal,Reading,8,HPS Regular,36.8
+Goal,Reading,8,Hartford Magnet,51.8
+Goal,Reading,8,CREC Magnet ,50
+Goal,Reading,8,Open Choice,61.6
+Goal,Writing,8,HPS Regular,26.4
+Goal,Writing,8,Hartford Magnet,42.9
+Goal,Writing,8,CREC Magnet ,50.7
+Goal,Writing,8,Open Choice,50
+Goal,Reading,10,HPS Regular,5.4
+Goal,Reading,10,Hartford Magnet,26.9
+Goal,Reading,10,CREC Magnet ,25.3
+Goal,Reading,10,Open Choice,15.2
+Goal,Writing,10,HPS Regular,15.5
+Goal,Writing,10,Hartford Magnet,44.7
+Goal,Writing,10,CREC Magnet ,49.5
+Goal,Writing,10,Open Choice,35.8
+Goal,Math,3,HPS Regular,25.1
+Goal,Math,3,Hartford Magnet,29.9
+Goal,Math,3,CREC Magnet ,52.9
+Goal,Math,3,Open Choice,30.6
+Goal,Science,5,HPS Regular,18.2
+Goal,Science,5,Hartford Magnet,41.5
+Goal,Science,5,CREC Magnet ,60
+Goal,Science,5,Open Choice,39.2
+Goal,Math,4,HPS Regular,24.8
+Goal,Math,4,Hartford Magnet,39
+Goal,Math,4,CREC Magnet ,53.7
+Goal,Math,4,Open Choice,39.6
+Goal,Science,8,HPS Regular,15.5
+Goal,Science,8,Hartford Magnet,32.4
+Goal,Science,8,CREC Magnet ,24.4
+Goal,Science,8,Open Choice,36.4
+Goal,Math,5,HPS Regular,26.8
+Goal,Math,5,Hartford Magnet,43.7
+Goal,Math,5,CREC Magnet ,57.1
+Goal,Math,5,Open Choice,45.8
+Goal,Science,10,HPS Regular,4.7
+Goal,Science,10,Hartford Magnet,30.4
+Goal,Science,10,CREC Magnet ,15.2
+Goal,Science,10,Open Choice,13.7
+Goal,Math,6,HPS Regular,26.8
+Goal,Math,6,Hartford Magnet,48
+Goal,Math,6,CREC Magnet ,30.6
+Goal,Math,6,Open Choice,43.1
+Goal,Math,7,HPS Regular,18.8
+Goal,Math,7,Hartford Magnet,31.2
+Goal,Math,7,CREC Magnet ,39.8
+Goal,Math,7,Open Choice,39.8
+Goal,Math,8,HPS Regular,18.9
+Goal,Math,8,Hartford Magnet,36.8
+Goal,Math,8,CREC Magnet ,37
+Goal,Math,8,Open Choice,35.4
+Goal,Math,10,HPS Regular,4.9
+Goal,Math,10,Hartford Magnet,26
+Goal,Math,10,CREC Magnet ,31.1
+Goal,Math,10,Open Choice,19.8
+Proficiency,Reading,3,HPS Regular,45.8
+Proficiency,Reading,3,Hartford Magnet,59.3
+Proficiency,Reading,3,CREC Magnet ,74.6
+Proficiency,Reading,3,Open Choice,54.7
+Proficiency,Writing,3,HPS Regular,65
+Proficiency,Writing,3,Hartford Magnet,71.5
+Proficiency,Writing,3,CREC Magnet ,76.9
+Proficiency,Writing,3,Open Choice,63.6
+Proficiency,Reading,4,HPS Regular,44.5
+Proficiency,Reading,4,Hartford Magnet,61.5
+Proficiency,Reading,4,CREC Magnet ,74.5
+Proficiency,Reading,4,Open Choice,60.8
+Proficiency,Writing,4,HPS Regular,63.7
+Proficiency,Writing,4,Hartford Magnet,68.8
+Proficiency,Writing,4,CREC Magnet ,76.2
+Proficiency,Writing,4,Open Choice,78.3
+Proficiency,Reading,5,HPS Regular,46.4
+Proficiency,Reading,5,Hartford Magnet,64.6
+Proficiency,Reading,5,CREC Magnet ,92.9
+Proficiency,Reading,5,Open Choice,71.6
+Proficiency,Writing,5,HPS Regular,65.8
+Proficiency,Writing,5,Hartford Magnet,84.8
+Proficiency,Writing,5,CREC Magnet ,93.3
+Proficiency,Writing,5,Open Choice,80.8
+Proficiency,Reading,6,HPS Regular,54.9
+Proficiency,Reading,6,Hartford Magnet,78.1
+Proficiency,Reading,6,CREC Magnet ,65.3
+Proficiency,Reading,6,Open Choice,73.6
+Proficiency,Writing,6,HPS Regular,58.6
+Proficiency,Writing,6,Hartford Magnet,78.4
+Proficiency,Writing,6,CREC Magnet ,73.5
+Proficiency,Writing,6,Open Choice,76
+Proficiency,Reading,7,HPS Regular,55.7
+Proficiency,Reading,7,Hartford Magnet,80.9
+Proficiency,Reading,7,CREC Magnet ,77.9
+Proficiency,Reading,7,Open Choice,86.9
+Proficiency,Writing,7,HPS Regular,51.7
+Proficiency,Writing,7,Hartford Magnet,74.9
+Proficiency,Writing,7,CREC Magnet ,71.9
+Proficiency,Writing,7,Open Choice,74.8
+Proficiency,Reading,8,HPS Regular,53.8
+Proficiency,Reading,8,Hartford Magnet,70.7
+Proficiency,Reading,8,CREC Magnet ,69.2
+Proficiency,Reading,8,Open Choice,79.8
+Proficiency,Writing,8,HPS Regular,58.7
+Proficiency,Writing,8,Hartford Magnet,74.4
+Proficiency,Writing,8,CREC Magnet ,75.4
+Proficiency,Writing,8,Open Choice,82.7
+Proficiency,Reading,10,HPS Regular,38.1
+Proficiency,Reading,10,Hartford Magnet,74.8
+Proficiency,Reading,10,CREC Magnet ,68.1
+Proficiency,Reading,10,Open Choice,63.3
+Proficiency,Writing,10,HPS Regular,56.8
+Proficiency,Writing,10,Hartford Magnet,88.9
+Proficiency,Writing,10,CREC Magnet ,94.6
+Proficiency,Writing,10,Open Choice,74.7
+Proficiency,Math,3,HPS Regular,54.6
+Proficiency,Math,3,Hartford Magnet,66
+Proficiency,Math,3,CREC Magnet ,77.9
+Proficiency,Math,3,Open Choice,60.4
+Proficiency,Science,5,HPS Regular,42.5
+Proficiency,Science,5,Hartford Magnet,70.1
+Proficiency,Science,5,CREC Magnet ,96.7
+Proficiency,Science,5,Open Choice,66.9
+Proficiency,Math,4,HPS Regular,52.4
+Proficiency,Math,4,Hartford Magnet,62.5
+Proficiency,Math,4,CREC Magnet ,87
+Proficiency,Math,4,Open Choice,67.9
+Proficiency,Science,8,HPS Regular,32.7
+Proficiency,Science,8,Hartford Magnet,57.9
+Proficiency,Science,8,CREC Magnet ,50.4
+Proficiency,Science,8,Open Choice,61.8
+Proficiency,Math,5,HPS Regular,45.8
+Proficiency,Math,5,Hartford Magnet,62.9
+Proficiency,Math,5,CREC Magnet ,89.3
+Proficiency,Math,5,Open Choice,73.7
+Proficiency,Science,10,HPS Regular,34.3
+Proficiency,Science,10,Hartford Magnet,71.9
+Proficiency,Science,10,CREC Magnet ,64.1
+Proficiency,Science,10,Open Choice,51.6
+Proficiency,Math,6,HPS Regular,53.8
+Proficiency,Math,6,Hartford Magnet,73.4
+Proficiency,Math,6,CREC Magnet ,69.4
+Proficiency,Math,6,Open Choice,73.4
+Proficiency,Math,7,HPS Regular,45.7
+Proficiency,Math,7,Hartford Magnet,66.5
+Proficiency,Math,7,CREC Magnet ,72.8
+Proficiency,Math,7,Open Choice,78.8
+Proficiency,Math,8,HPS Regular,49.5
+Proficiency,Math,8,Hartford Magnet,72.2
+Proficiency,Math,8,CREC Magnet ,80.3
+Proficiency,Math,8,Open Choice,88.9
+Proficiency,Math,10,HPS Regular,29.5
+Proficiency,Math,10,Hartford Magnet,64.7
+Proficiency,Math,10,CREC Magnet ,63.3
+Proficiency,Math,10,Open Choice,49.4

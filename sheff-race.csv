@@ -1,0 +1,449 @@
+Level,Test,Race,School,Value
+Goal,Reading,Latino/Hisp ,HPS Regular,24.7
+Goal,Reading,Latino/Hisp ,HREGn,3138
+Goal,Reading,Latino/Hisp ,Hartford Magnet,45.7
+Goal,Reading,Latino/Hisp ,HMn,823
+Goal,Reading,Latino/Hisp ,CREC Magnet ,46.8
+Goal,Reading,Latino/Hisp ,CRn,267
+Goal,Reading,Latino/Hisp ,Open Choice,46.6
+Goal,Reading,Latino/Hisp ,OCn,253
+Goal,Reading,Native Amer.,HPS Regular,NA
+Goal,Reading,Native Amer.,HREGn,NA
+Goal,Reading,Native Amer.,Hartford Magnet,NA
+Goal,Reading,Native Amer.,HMn,NA
+Goal,Reading,Native Amer.,CREC Magnet ,NA
+Goal,Reading,Native Amer.,CRn,NA
+Goal,Reading,Native Amer.,Open Choice,NA
+Goal,Reading,Native Amer.,OCn,NA
+Goal,Reading,African Amer.,HPS Regular,34.4
+Goal,Reading,African Amer.,HREGn,1853
+Goal,Reading,African Amer.,Hartford Magnet,47.7
+Goal,Reading,African Amer.,HMn,650
+Goal,Reading,African Amer.,CREC Magnet ,47.6
+Goal,Reading,African Amer.,CRn,275
+Goal,Reading,African Amer.,Open Choice,45.4
+Goal,Reading,African Amer.,OCn,485
+Goal,Reading,Asian,HPS Regular,27.8
+Goal,Reading,Asian,HREGn,115
+Goal,Reading,Asian,Hartford Magnet,53.1
+Goal,Reading,Asian,HMn,32
+Goal,Reading,Asian,CREC Magnet ,NA
+Goal,Reading,Asian,CRn,NA
+Goal,Reading,Asian,Open Choice,NA
+Goal,Reading,Asian,OCn,NA
+Goal,Reading,Hawaiian/Pacific,HPS Regular,NA
+Goal,Reading,Hawaiian/Pacific,HREGn,NA
+Goal,Reading,Hawaiian/Pacific,Hartford Magnet,NA
+Goal,Reading,Hawaiian/Pacific,HMn,NA
+Goal,Reading,Hawaiian/Pacific,CREC Magnet ,NA
+Goal,Reading,Hawaiian/Pacific,CRn,NA
+Goal,Reading,Hawaiian/Pacific,Open Choice,NA
+Goal,Reading,Hawaiian/Pacific,OCn,NA
+Goal,Reading,White,HPS Regular,51.1
+Goal,Reading,White,HREGn,231
+Goal,Reading,White,Hartford Magnet,73.9
+Goal,Reading,White,HMn,111
+Goal,Reading,White,CREC Magnet ,NA
+Goal,Reading,White,CRn,NA
+Goal,Reading,White,Open Choice,58.3
+Goal,Reading,White,OCn,NA
+Goal,Reading,Two + races,HPS Regular,24.6
+Goal,Reading,Two + races,HREGn,134
+Goal,Reading,Two + races,Hartford Magnet,57.9
+Goal,Reading,Two + races,HMn,38
+Goal,Reading,Two + races,CREC Magnet ,NA
+Goal,Reading,Two + races,CRn,NA
+Goal,Reading,Two + races,Open Choice,43.8
+Goal,Reading,Two + races,OCn,NA
+Goal,Math,Latino/Hisp ,HPS Regular,19.3
+Goal,Math,Latino/Hisp ,HREGn,3251
+Goal,Math,Latino/Hisp ,Hartford Magnet,36
+Goal,Math,Latino/Hisp ,HMn,833
+Goal,Math,Latino/Hisp ,CREC Magnet ,40.4
+Goal,Math,Latino/Hisp ,CRn,267
+Goal,Math,Latino/Hisp ,Open Choice,42.3
+Goal,Math,Latino/Hisp ,OCn,267
+Goal,Math,Native Amer.,HPS Regular,NA
+Goal,Math,Native Amer.,HREGn,NA
+Goal,Math,Native Amer.,Hartford Magnet,NA
+Goal,Math,Native Amer.,HMn,NA
+Goal,Math,Native Amer.,CREC Magnet ,NA
+Goal,Math,Native Amer.,CRn,NA
+Goal,Math,Native Amer.,Open Choice,NA
+Goal,Math,Native Amer.,OCn,NA
+Goal,Math,African Amer.,HPS Regular,24
+Goal,Math,African Amer.,HREGn,1886
+Goal,Math,African Amer.,Hartford Magnet,31.6
+Goal,Math,African Amer.,HMn,652
+Goal,Math,African Amer.,CREC Magnet ,35.5
+Goal,Math,African Amer.,CRn,276
+Goal,Math,African Amer.,Open Choice,32.9
+Goal,Math,African Amer.,OCn,496
+Goal,Math,Asian,HPS Regular,32.6
+Goal,Math,Asian,HREGn,135
+Goal,Math,Asian,Hartford Magnet,51.6
+Goal,Math,Asian,HMn,31
+Goal,Math,Asian,CREC Magnet ,NA
+Goal,Math,Asian,CRn,NA
+Goal,Math,Asian,Open Choice,NA
+Goal,Math,Asian,OCn,NA
+Goal,Math,Hawaiian/Pacific,HPS Regular,NA
+Goal,Math,Hawaiian/Pacific,HREGn,NA
+Goal,Math,Hawaiian/Pacific,Hartford Magnet,NA
+Goal,Math,Hawaiian/Pacific,HMn,NA
+Goal,Math,Hawaiian/Pacific,CREC Magnet ,NA
+Goal,Math,Hawaiian/Pacific,CRn,NA
+Goal,Math,Hawaiian/Pacific,Open Choice,NA
+Goal,Math,Hawaiian/Pacific,OCn,NA
+Goal,Math,White,HPS Regular,38.1
+Goal,Math,White,HREGn,247
+Goal,Math,White,Hartford Magnet,62.2
+Goal,Math,White,HMn,111
+Goal,Math,White,CREC Magnet ,NA
+Goal,Math,White,CRn,NA
+Goal,Math,White,Open Choice,NA
+Goal,Math,White,OCn,NA
+Goal,Math,Two + races,HPS Regular,14
+Goal,Math,Two + races,HREGn,136
+Goal,Math,Two + races,Hartford Magnet,39.5
+Goal,Math,Two + races,HMn,38
+Goal,Math,Two + races,CREC Magnet ,NA
+Goal,Math,Two + races,CRn,NA
+Goal,Math,Two + races,Open Choice,NA
+Goal,Math,Two + races,OCn,NA
+Proficient,Reading,Latino/Hisp ,HPS Regular,42.7
+Proficient,Reading,Latino/Hisp ,HREGn,3138
+Proficient,Reading,Latino/Hisp ,Hartford Magnet,68.4
+Proficient,Reading,Latino/Hisp ,HMn,823
+Proficient,Reading,Latino/Hisp ,CREC Magnet ,70
+Proficient,Reading,Latino/Hisp ,CRn,267
+Proficient,Reading,Latino/Hisp ,Open Choice,68
+Proficient,Reading,Latino/Hisp ,OCn,253
+Proficient,Reading,Native Amer.,HPS Regular,NA
+Proficient,Reading,Native Amer.,HREGn,NA
+Proficient,Reading,Native Amer.,Hartford Magnet,NA
+Proficient,Reading,Native Amer.,HMn,NA
+Proficient,Reading,Native Amer.,CREC Magnet ,NA
+Proficient,Reading,Native Amer.,CRn,NA
+Proficient,Reading,Native Amer.,Open Choice,NA
+Proficient,Reading,Native Amer.,OCn,NA
+Proficient,Reading,African Amer.,HPS Regular,55.9
+Proficient,Reading,African Amer.,HREGn,1853
+Proficient,Reading,African Amer.,Hartford Magnet,72.9
+Proficient,Reading,African Amer.,HMn,650
+Proficient,Reading,African Amer.,CREC Magnet ,70.2
+Proficient,Reading,African Amer.,CRn,275
+Proficient,Reading,African Amer.,Open Choice,69.3
+Proficient,Reading,African Amer.,OCn,485
+Proficient,Reading,Asian,HPS Regular,42.6
+Proficient,Reading,Asian,HREGn,115
+Proficient,Reading,Asian,Hartford Magnet,78.1
+Proficient,Reading,Asian,HMn,32
+Proficient,Reading,Asian,CREC Magnet ,NA
+Proficient,Reading,Asian,CRn,NA
+Proficient,Reading,Asian,Open Choice,NA
+Proficient,Reading,Asian,OCn,NA
+Proficient,Reading,Hawaiian/Pacific,HPS Regular,NA
+Proficient,Reading,Hawaiian/Pacific,HREGn,NA
+Proficient,Reading,Hawaiian/Pacific,Hartford Magnet,NA
+Proficient,Reading,Hawaiian/Pacific,HMn,NA
+Proficient,Reading,Hawaiian/Pacific,CREC Magnet ,NA
+Proficient,Reading,Hawaiian/Pacific,CRn,NA
+Proficient,Reading,Hawaiian/Pacific,Open Choice,NA
+Proficient,Reading,Hawaiian/Pacific,OCn,NA
+Proficient,Reading,White,HPS Regular,70.6
+Proficient,Reading,White,HREGn,231
+Proficient,Reading,White,Hartford Magnet,89.2
+Proficient,Reading,White,HMn,111
+Proficient,Reading,White,CREC Magnet ,NA
+Proficient,Reading,White,CRn,NA
+Proficient,Reading,White,Open Choice,NA
+Proficient,Reading,White,OCn,NA
+Proficient,Reading,Two + races,HPS Regular,43.3
+Proficient,Reading,Two + races,HREGn,134
+Proficient,Reading,Two + races,Hartford Magnet,86.8
+Proficient,Reading,Two + races,HMn,38
+Proficient,Reading,Two + races,CREC Magnet ,NA
+Proficient,Reading,Two + races,CRn,NA
+Proficient,Reading,Two + races,Open Choice,NA
+Proficient,Reading,Two + races,OCn,NA
+Proficient,Math,Latino/Hisp ,HPS Regular,44.2
+Proficient,Math,Latino/Hisp ,HREGn,3251
+Proficient,Math,Latino/Hisp ,Hartford Magnet,68.2
+Proficient,Math,Latino/Hisp ,HMn,833
+Proficient,Math,Latino/Hisp ,CREC Magnet ,76
+Proficient,Math,Latino/Hisp ,CRn,267
+Proficient,Math,Latino/Hisp ,Open Choice,71.2
+Proficient,Math,Latino/Hisp ,OCn,267
+Proficient,Math,Native Amer.,HPS Regular,NA
+Proficient,Math,Native Amer.,HREGn,NA
+Proficient,Math,Native Amer.,Hartford Magnet,NA
+Proficient,Math,Native Amer.,HMn,NA
+Proficient,Math,Native Amer.,CREC Magnet ,NA
+Proficient,Math,Native Amer.,CRn,NA
+Proficient,Math,Native Amer.,Open Choice,NA
+Proficient,Math,Native Amer.,OCn,NA
+Proficient,Math,African Amer.,HPS Regular,52.9
+Proficient,Math,African Amer.,HREGn,1886
+Proficient,Math,African Amer.,Hartford Magnet,62.6
+Proficient,Math,African Amer.,HMn,652
+Proficient,Math,African Amer.,CREC Magnet ,71
+Proficient,Math,African Amer.,CRn,276
+Proficient,Math,African Amer.,Open Choice,69.6
+Proficient,Math,African Amer.,OCn,496
+Proficient,Math,Asian,HPS Regular,54.8
+Proficient,Math,Asian,HREGn,135
+Proficient,Math,Asian,Hartford Magnet,77.4
+Proficient,Math,Asian,HMn,31
+Proficient,Math,Asian,CREC Magnet ,NA
+Proficient,Math,Asian,CRn,NA
+Proficient,Math,Asian,Open Choice,NA
+Proficient,Math,Asian,OCn,NA
+Proficient,Math,Hawaiian/Pacific,HPS Regular,NA
+Proficient,Math,Hawaiian/Pacific,HREGn,NA
+Proficient,Math,Hawaiian/Pacific,Hartford Magnet,NA
+Proficient,Math,Hawaiian/Pacific,HMn,NA
+Proficient,Math,Hawaiian/Pacific,CREC Magnet ,NA
+Proficient,Math,Hawaiian/Pacific,CRn,NA
+Proficient,Math,Hawaiian/Pacific,Open Choice,NA
+Proficient,Math,Hawaiian/Pacific,OCn,NA
+Proficient,Math,White,HPS Regular,68
+Proficient,Math,White,HREGn,247
+Proficient,Math,White,Hartford Magnet,85.6
+Proficient,Math,White,HMn,111
+Proficient,Math,White,CREC Magnet ,NA
+Proficient,Math,White,CRn,NA
+Proficient,Math,White,Open Choice,NA
+Proficient,Math,White,OCn,NA
+Proficient,Math,Two + races,HPS Regular,44.1
+Proficient,Math,Two + races,HREGn,136
+Proficient,Math,Two + races,Hartford Magnet,76.3
+Proficient,Math,Two + races,HMn,38
+Proficient,Math,Two + races,CREC Magnet ,NA
+Proficient,Math,Two + races,CRn,NA
+Proficient,Math,Two + races,Open Choice,NA
+Proficient,Math,Two + races,OCn,NA
+Goal,Writing,Latino/Hisp ,HPS Regular,24.8
+Goal,Writing,Latino/Hisp ,HREGn,3593
+Goal,Writing,Latino/Hisp ,Hartford Magnet,42.5
+Goal,Writing,Latino/Hisp ,HMn,917
+Goal,Writing,Latino/Hisp ,CREC Magnet ,41.2
+Goal,Writing,Latino/Hisp ,CRn,289
+Goal,Writing,Latino/Hisp ,Open Choice,45
+Goal,Writing,Latino/Hisp ,OCn,289
+Goal,Writing,Native Amer.,HPS Regular,NA
+Goal,Writing,Native Amer.,HREGn,NA
+Goal,Writing,Native Amer.,Hartford Magnet,NA
+Goal,Writing,Native Amer.,HMn,NA
+Goal,Writing,Native Amer.,CREC Magnet ,NA
+Goal,Writing,Native Amer.,CRn,NA
+Goal,Writing,Native Amer.,Open Choice,NA
+Goal,Writing,Native Amer.,OCn,NA
+Goal,Writing,African Amer.,HPS Regular,35.1
+Goal,Writing,African Amer.,HREGn,2090
+Goal,Writing,African Amer.,Hartford Magnet,43.3
+Goal,Writing,African Amer.,HMn,719
+Goal,Writing,African Amer.,CREC Magnet ,51.6
+Goal,Writing,African Amer.,CRn,304
+Goal,Writing,African Amer.,Open Choice,42.8
+Goal,Writing,African Amer.,OCn,549
+Goal,Writing,Asian,HPS Regular,36.5
+Goal,Writing,Asian,HREGn,126
+Goal,Writing,Asian,Hartford Magnet,52.9
+Goal,Writing,Asian,HMn,34
+Goal,Writing,Asian,CREC Magnet ,NA
+Goal,Writing,Asian,CRn,NA
+Goal,Writing,Asian,Open Choice,NA
+Goal,Writing,Asian,OCn,NA
+Goal,Writing,Hawaiian/Pacific,HPS Regular,NA
+Goal,Writing,Hawaiian/Pacific,HREGn,NA
+Goal,Writing,Hawaiian/Pacific,Hartford Magnet,NA
+Goal,Writing,Hawaiian/Pacific,HMn,NA
+Goal,Writing,Hawaiian/Pacific,CREC Magnet ,NA
+Goal,Writing,Hawaiian/Pacific,CRn,NA
+Goal,Writing,Hawaiian/Pacific,Open Choice,NA
+Goal,Writing,Hawaiian/Pacific,OCn,NA
+Goal,Writing,White,HPS Regular,46.1
+Goal,Writing,White,HREGn,245
+Goal,Writing,White,Hartford Magnet,68.1
+Goal,Writing,White,HMn,113
+Goal,Writing,White,CREC Magnet ,NA
+Goal,Writing,White,CRn,NA
+Goal,Writing,White,Open Choice,NA
+Goal,Writing,White,OCn,NA
+Goal,Writing,Two + races,HPS Regular,27.5
+Goal,Writing,Two + races,HREGn,138
+Goal,Writing,Two + races,Hartford Magnet,59
+Goal,Writing,Two + races,HMn,39
+Goal,Writing,Two + races,CREC Magnet ,NA
+Goal,Writing,Two + races,CRn,NA
+Goal,Writing,Two + races,Open Choice,NA
+Goal,Writing,Two + races,OCn,NA
+Goal,Science,Latino/Hisp ,HPS Regular,12.8
+Goal,Science,Latino/Hisp ,HREGn,1493
+Goal,Science,Latino/Hisp ,Hartford Magnet,31.5
+Goal,Science,Latino/Hisp ,HMn,340
+Goal,Science,Latino/Hisp ,CREC Magnet ,24.3
+Goal,Science,Latino/Hisp ,CRn,111
+Goal,Science,Latino/Hisp ,Open Choice,36
+Goal,Science,Latino/Hisp ,OCn,111
+Goal,Science,Native Amer.,HPS Regular,NA
+Goal,Science,Native Amer.,HREGn,NA
+Goal,Science,Native Amer.,Hartford Magnet,NA
+Goal,Science,Native Amer.,HMn,NA
+Goal,Science,Native Amer.,CREC Magnet ,NA
+Goal,Science,Native Amer.,CRn,NA
+Goal,Science,Native Amer.,Open Choice,NA
+Goal,Science,Native Amer.,OCn,NA
+Goal,Science,African Amer.,HPS Regular,15.1
+Goal,Science,African Amer.,HREGn,906
+Goal,Science,African Amer.,Hartford Magnet,31.8
+Goal,Science,African Amer.,HMn,299
+Goal,Science,African Amer.,CREC Magnet ,23.3
+Goal,Science,African Amer.,CRn,129
+Goal,Science,African Amer.,Open Choice,27.8
+Goal,Science,African Amer.,OCn,216
+Goal,Science,Asian,HPS Regular,8.7
+Goal,Science,Asian,HREGn,69
+Goal,Science,Asian,Hartford Magnet,NA
+Goal,Science,Asian,HMn,NA
+Goal,Science,Asian,CREC Magnet ,NA
+Goal,Science,Asian,CRn,NA
+Goal,Science,Asian,Open Choice,NA
+Goal,Science,Asian,OCn,NA
+Goal,Science,Hawaiian/Pacific,HPS Regular,NA
+Goal,Science,Hawaiian/Pacific,HREGn,NA
+Goal,Science,Hawaiian/Pacific,Hartford Magnet,NA
+Goal,Science,Hawaiian/Pacific,HMn,NA
+Goal,Science,Hawaiian/Pacific,CREC Magnet ,NA
+Goal,Science,Hawaiian/Pacific,CRn,NA
+Goal,Science,Hawaiian/Pacific,Open Choice,NA
+Goal,Science,Hawaiian/Pacific,OCn,NA
+Goal,Science,White,HPS Regular,26.3
+Goal,Science,White,HREGn,99
+Goal,Science,White,Hartford Magnet,51.2
+Goal,Science,White,HMn,43
+Goal,Science,White,CREC Magnet ,NA
+Goal,Science,White,CRn,NA
+Goal,Science,White,Open Choice,NA
+Goal,Science,White,OCn,NA
+Goal,Science,Two + races,HPS Regular,12.3
+Goal,Science,Two + races,HREGn,65
+Goal,Science,Two + races,Hartford Magnet,54.2
+Goal,Science,Two + races,HMn,24
+Goal,Science,Two + races,CREC Magnet ,NA
+Goal,Science,Two + races,CRn,NA
+Goal,Science,Two + races,Open Choice,NA
+Goal,Science,Two + races,OCn,NA
+Proficient,Writing,Latino/Hisp ,HPS Regular,55.7
+Proficient,Writing,Latino/Hisp ,HREGn,3593
+Proficient,Writing,Latino/Hisp ,Hartford Magnet,75
+Proficient,Writing,Latino/Hisp ,HMn,917
+Proficient,Writing,Latino/Hisp ,CREC Magnet ,75.8
+Proficient,Writing,Latino/Hisp ,CRn,289
+Proficient,Writing,Latino/Hisp ,Open Choice,76.5
+Proficient,Writing,Latino/Hisp ,OCn,289
+Proficient,Writing,Native Amer.,HPS Regular,NA
+Proficient,Writing,Native Amer.,HREGn,NA
+Proficient,Writing,Native Amer.,Hartford Magnet,NA
+Proficient,Writing,Native Amer.,HMn,NA
+Proficient,Writing,Native Amer.,CREC Magnet ,NA
+Proficient,Writing,Native Amer.,CRn,NA
+Proficient,Writing,Native Amer.,Open Choice,NA
+Proficient,Writing,Native Amer.,OCn,NA
+Proficient,Writing,African Amer.,HPS Regular,67.7
+Proficient,Writing,African Amer.,HREGn,2090
+Proficient,Writing,African Amer.,Hartford Magnet,77.1
+Proficient,Writing,African Amer.,HMn,719
+Proficient,Writing,African Amer.,CREC Magnet ,78.6
+Proficient,Writing,African Amer.,CRn,304
+Proficient,Writing,African Amer.,Open Choice,74.5
+Proficient,Writing,African Amer.,OCn,549
+Proficient,Writing,Asian,HPS Regular,57.1
+Proficient,Writing,Asian,HREGn,126
+Proficient,Writing,Asian,Hartford Magnet,82.4
+Proficient,Writing,Asian,HMn,34
+Proficient,Writing,Asian,CREC Magnet ,NA
+Proficient,Writing,Asian,CRn,NA
+Proficient,Writing,Asian,Open Choice,NA
+Proficient,Writing,Asian,OCn,NA
+Proficient,Writing,Hawaiian/Pacific,HPS Regular,NA
+Proficient,Writing,Hawaiian/Pacific,HREGn,NA
+Proficient,Writing,Hawaiian/Pacific,Hartford Magnet,NA
+Proficient,Writing,Hawaiian/Pacific,HMn,NA
+Proficient,Writing,Hawaiian/Pacific,CREC Magnet ,NA
+Proficient,Writing,Hawaiian/Pacific,CRn,NA
+Proficient,Writing,Hawaiian/Pacific,Open Choice,NA
+Proficient,Writing,Hawaiian/Pacific,OCn,NA
+Proficient,Writing,White,HPS Regular,73.9
+Proficient,Writing,White,HREGn,245
+Proficient,Writing,White,Hartford Magnet,90.3
+Proficient,Writing,White,HMn,113
+Proficient,Writing,White,CREC Magnet ,NA
+Proficient,Writing,White,CRn,NA
+Proficient,Writing,White,Open Choice,NA
+Proficient,Writing,White,OCn,NA
+Proficient,Writing,Two + races,HPS Regular,65.9
+Proficient,Writing,Two + races,HREGn,138
+Proficient,Writing,Two + races,Hartford Magnet,87.2
+Proficient,Writing,Two + races,HMn,39
+Proficient,Writing,Two + races,CREC Magnet ,NA
+Proficient,Writing,Two + races,CRn,NA
+Proficient,Writing,Two + races,Open Choice,NA
+Proficient,Writing,Two + races,OCn,NA
+Proficient,Science,Latino/Hisp ,HPS Regular,33.1
+Proficient,Science,Latino/Hisp ,HREGn,1493
+Proficient,Science,Latino/Hisp ,Hartford Magnet,63.2
+Proficient,Science,Latino/Hisp ,HMn,340
+Proficient,Science,Latino/Hisp ,CREC Magnet ,58.6
+Proficient,Science,Latino/Hisp ,CRn,111
+Proficient,Science,Latino/Hisp ,Open Choice,60.4
+Proficient,Science,Latino/Hisp ,OCn,111
+Proficient,Science,Native Amer.,HPS Regular,NA
+Proficient,Science,Native Amer.,HREGn,NA
+Proficient,Science,Native Amer.,Hartford Magnet,NA
+Proficient,Science,Native Amer.,HMn,NA
+Proficient,Science,Native Amer.,CREC Magnet ,NA
+Proficient,Science,Native Amer.,CRn,NA
+Proficient,Science,Native Amer.,Open Choice,NA
+Proficient,Science,Native Amer.,OCn,NA
+Proficient,Science,African Amer.,HPS Regular,40.7
+Proficient,Science,African Amer.,HREGn,906
+Proficient,Science,African Amer.,Hartford Magnet,64.2
+Proficient,Science,African Amer.,HMn,299
+Proficient,Science,African Amer.,CREC Magnet ,60.5
+Proficient,Science,African Amer.,CRn,129
+Proficient,Science,African Amer.,Open Choice,61.6
+Proficient,Science,African Amer.,OCn,216
+Proficient,Science,Asian,HPS Regular,17.4
+Proficient,Science,Asian,HREGn,69
+Proficient,Science,Asian,Hartford Magnet,NA
+Proficient,Science,Asian,HMn,NA
+Proficient,Science,Asian,CREC Magnet ,NA
+Proficient,Science,Asian,CRn,NA
+Proficient,Science,Asian,Open Choice,NA
+Proficient,Science,Asian,OCn,NA
+Proficient,Science,Hawaiian/Pacific,HPS Regular,NA
+Proficient,Science,Hawaiian/Pacific,HREGn,NA
+Proficient,Science,Hawaiian/Pacific,Hartford Magnet,NA
+Proficient,Science,Hawaiian/Pacific,HMn,NA
+Proficient,Science,Hawaiian/Pacific,CREC Magnet ,NA
+Proficient,Science,Hawaiian/Pacific,CRn,NA
+Proficient,Science,Hawaiian/Pacific,Open Choice,NA
+Proficient,Science,Hawaiian/Pacific,OCn,NA
+Proficient,Science,White,HPS Regular,70.7
+Proficient,Science,White,HREGn,99
+Proficient,Science,White,Hartford Magnet,79.1
+Proficient,Science,White,HMn,43
+Proficient,Science,White,CREC Magnet ,NA
+Proficient,Science,White,CRn,NA
+Proficient,Science,White,Open Choice,NA
+Proficient,Science,White,OCn,NA
+Proficient,Science,Two + races,HPS Regular,41.5
+Proficient,Science,Two + races,HREGn,65
+Proficient,Science,Two + races,Hartford Magnet,87.5
+Proficient,Science,Two + races,HMn,24
+Proficient,Science,Two + races,CREC Magnet ,NA
+Proficient,Science,Two + races,CRn,NA
+Proficient,Science,Two + races,Open Choice,NA
+Proficient,Science,Two + races,OCn,NA

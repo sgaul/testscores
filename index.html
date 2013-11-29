@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Test scores</title>
+    <link rel="stylesheet" href="libraries/frameworks/minimal/stylesheets/styles.css">
+    <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+        <link rel=stylesheet href="libraries/widgets/nvd3/css/nv.d3.css"></link>
+<link rel=stylesheet href="libraries/widgets/nvd3/css/rNVD3.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+    <script src="libraries/widgets/nvd3/js/jquery-1.8.2.min.js"></script>
+<script src="libraries/widgets/nvd3/js/d3.v3.min.js"></script>
+<script src="libraries/widgets/nvd3/js/nv.d3.min-new.js"></script>
+<script src="libraries/widgets/nvd3/js/fisheye.js"></script>
+
+  </head>
+  <body>
+    <div class="wrapper">
+<header>
+  <h1>Test scores</h1>
+  <p>Hartford regional data and indicators</p>
+    <ol>
+    </ol>
+</header>
+
+      <section>
+        <h2>Test scores</h2>
+<p>This page covers indicators related to test scores of students attending Hartford area districts. </p>
+
+<p>Enrollment patterns for the region mean that students in school districts for the 30 towns in the CRCOG region are not the same as the school-age population living in the region. For instance, students from towns outside the region may attend schools located within the 30-town CRCOG region. In addition, students living in the region that attend private schools, are home-schooled or pursue other alternatives are not captured.</p>
+
+<h2>Data and limitations</h2>
+
+<p>Data on test scores for Connecticut are available from the <a href="http://sdeportal.ct.gov/Cedar/">State Department of Education</a>. </p>
+
+<h2>What do we already know?</h2>
+
+<p>Indicators for test scores ranked highly in the survey and are used in several reports. </p>
+
+<h3>Local</h3>
+
+<ul>
+<li><a href="http://www.ctfairhousing.org/people-place-and-opportunity-report/">CT Fair Housing Center Opportunity Mapping</a> (developed with the Kirwan Institute at Ohio State) includes students with passing math and reading test scores from SDE. </li>
+<li><a href="http://www.cga.ct.gov/kid/rba/results.asp">CT Kids Report Card</a> includes third grade reading level as part of &#39;Future Success.&#39;</li>
+<li><a href="http://www.capitalworkforce.org/ctworks/documents/Community_Workforce_Development_Report_Card_2011ff.pdf">CWP Community Workforce Development Report Card</a> included students achieving goal in math and reading on the 8th grade CMT and the 10th grade CAPT.<br>
+Hartford Neighborhood Assessments  included the percent of students not proficient in overall CMT scores. </li>
+<li><a href="http://www.cadh.org/health-equity/health-equity-index.html">Health Equity Index</a> comprehensive test scores for grades 3, 4, 6, 8 and 10. </li>
+<li><a href="http://www.cahs.org/kidscount.asp">KidsCount</a> includes comprehensive 4th grade CMT scores and 10th grade CAPT scores. </li>
+<li><a href="http://pvpc.org/resources/datastats/state-of-people/stateofthepeople2013.pdf">Pioneer Valley State of the People</a> includes scores on math, reading and English proficiency from Grades 3, 8 and 10. 
+Sustainable Knowledge Corridor  includes 3rd grade reading test scores. </li>
+<li><a href="http://www.ct.gov/opm/cwp/view.asp?a=2998&amp;Q=490946">Population Results Working Group</a> includes the Pprcent of 3rd graders at or above Goal on CMT Reading and Math. </li>
+</ul>
+
+<h3>Other</h3>
+
+<ul>
+<li><a href="http://www.bostonindicators.org/">Boston Indicators Project</a> includes NAEP scores for reading and math for Grades 3, 4 and 8, Massachusetts state assessment scores for 10th grade and First Grade DIEBLS Reading    scores</li>
+<li><a href="http://fcd-us.org/our-work/child-well-being-index-cwi">The Child Well-Being Index</a> includes national math and reading test scores. </li>
+<li><a href="http://www.rifoundation.org/CommunityLeadership/CommunityDashboard/tabid/1157/Default.aspx">The Rhode Island Community Foundation</a> includes NECAP Assessment scores for Math and Reading for Grades 4, 8 and 11. </li>
+</ul>
+
+<h2>Sample results</h2>
+
+<p>The community indicator efforts listed above generally focus on test scores from 3rd to 10th grade, for math, reading and English language skills. In Connectict, these are covered by two main tests: the Connecticut Mastery Test (CMT) and the Connecticut Academic Performance Test (CAPT).  </p>
+
+<h3>CMT scores</h3>
+
+<p>For the CMT test, the results reflect test scores for 3rd grade and 8th grade for math, reading and writing, and 5th and 8th grade for science. </p>
+
+<p>The percent of students scoring above goal has steadily increased for the region over the past five years. </p>
+
+<p><img src="assets/fig/unnamed-chunk-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+
+<p>All subsequent results are for the same period for which test scores are currently available from SDE.</p>
+
+<p>By district, results can vary substantially year-on-year and by test and by school. Districts like Avon and Granby have had the highest performance over time, with Hartford and East Hartford faring the worst. </p>
+
+<p><img src="assets/fig/unnamed-chunk-2.png" alt="plot of chunk unnamed-chunk-2"> </p>
+
+<p>The results by test show the same patterns. </p>
+
+<h3>CMT subgroup results</h3>
+
+<p>SDE discloses test scores also for the following subgroups: </p>
+
+<ul>
+<li>English language learners</li>
+<li>Free / Reduced-price lunch eligibility (as a proxy for household income)</li>
+<li>Gender</li>
+<li>Race / ethnicity</li>
+<li>Special education</li>
+</ul>
+
+<p>Are there differences in test scores for these subgroups? (And are these differences significant?) Results are again for 3rd grade and 8th grade test scores, on math, reading and writing tests, for the past 6 years. </p>
+
+<p>This view of the achievement gap again shows ELL students performing significantly worse than any other subgroup, followed by Special Education, Hispanic / Latino, Free-lunch eligible and Black students. White, Asian and higher-income (not Free / Reduced Price Lunch Eligible) students perform the best. </p>
+
+<p><img src="assets/fig/unnamed-chunk-3.png" alt="plot of chunk unnamed-chunk-3"> </p>
+
+<p>The gaps between these subgroups have also changed little in the past six years.</p>
+
+<p><img src="assets/fig/unnamed-chunk-4.png" alt="plot of chunk unnamed-chunk-4"> </p>
+
+<h3>CAPT scores</h3>
+
+<p>For the CAPT test, there has been a similar slow steady improvement in scores for the region for the past five years. A majority of students are at or above goal, across all tests.</p>
+
+<p><img src="assets/fig/unnamed-chunk-5.png" alt="plot of chunk unnamed-chunk-5"> </p>
+
+<p>The percent scoring below basic level has been between 5 - 10 percent of students, generally declining over time. </p>
+
+<p>All subsequent results are for the same five-year period for which test scores are currently available from SDE.</p>
+
+<p><img src="assets/fig/unnamed-chunk-6.png" alt="plot of chunk unnamed-chunk-6"> </p>
+
+<p>If we look at school-level results by district, there is more variation within the region. Hartford, Bloomfield and East Hartford have the lowest scores overall, although there are low-scoring schools in other districts, including Enfield and CREC schools. </p>
+
+<p><img src="assets/fig/unnamed-chunk-7.png" alt="plot of chunk unnamed-chunk-7"> </p>
+
+<p>Looking at the percent scoring below basic level allows for identification of outliers - pockets where individual schools have high percentages of underperforming students. Hartford, East Hartford, Bloomfield, Manchester and the CREC schools jump out. </p>
+
+<p><img src="assets/fig/unnamed-chunk-8.png" alt="plot of chunk unnamed-chunk-8"> </p>
+
+<h3>CAPT subgroup results</h3>
+
+<p>SDE discloses test scores also for the following subgroups: </p>
+
+<ul>
+<li>English language learners</li>
+<li>Free / Reduced-price lunch eligibility (as a proxy for household income)</li>
+<li>Gender</li>
+<li>Race / ethnicity</li>
+<li>Special education</li>
+</ul>
+
+<p>English language-learners (ELL) again have the lowest CAPT scores overall, significantly lower than any other subgroup. Those are followed by special education students, Hispanic / Latino and Black students and students eligible for free / reduced-price lunches. Whites and Asians had the highest scores, among these subgroups. </p>
+
+<p><img src="assets/fig/unnamed-chunk-9.png" alt="plot of chunk unnamed-chunk-9"> </p>
+
+<p>Trends for the region by subgroup show the same gradual improvements with the gap between subgroups remaining roughly constant for each group. </p>
+
+<p><img src="assets/fig/unnamed-chunk-10.png" alt="plot of chunk unnamed-chunk-10"> </p>
+
+<p>Similarly, the percent scoring below basic has been gradually declining, with the highest levels for ELL students. </p>
+
+<p><img src="assets/fig/unnamed-chunk-11.png" alt="plot of chunk unnamed-chunk-11"> </p>
+
+<h3>Sheff performance scores</h3>
+
+<p><a href="http://www.ctmirror.org/node/143623">Results for the Sheff case</a> were released in late 2013 by SDE. The test score results show increases of 20 - 40 percent for performance at goal or proficiency for students participating in choice or magnet school programs. </p>
+
+<p><img src="assets/fig/unnamed-chunk-121.png" alt="plot of chunk unnamed-chunk-12"> <img src="assets/fig/unnamed-chunk-122.png" alt="plot of chunk unnamed-chunk-12"> </p>
+
+      </section>
+      <footer>
+        <p>Maintained by <a href="http://github.com/">
+          Scott Gaul
+        </a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by 
+          <a href="https://github.com/orderedlist">orderedlist</a></small>
+        </p>
+      </footer>    </div>
+    <script src="libraries/frameworks/minimal/javascripts/scale.fix.js"></script>
+  </body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
